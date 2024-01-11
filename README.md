@@ -4,18 +4,15 @@
 
 Build an Automated Market Maker (AMM) that is optimized for parallel processing of individual token pair transactions. The AMM should process individual token pair transactions in parallel, be capital efficient, enable greater throughput than Uniswap, dynamically adjust trading fees based on network conditions, and manage liquidity pools in a scalable manner
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+## Implementation details
 
-Foundry consists of:
+<img src="./images/image1.png" alt="Solution">
 
-- **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
-- **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
-- **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
-- **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+- A parallel AMM is currently being constructed using the Uniswap v2 code. The code is modified to align with our specific AMM requirements.
+- The router contract of Uniswap v2 has been removed, and swapping features are now directly implemented into the pair contract.
+- Users can now directly interact with the pair contract without the need for intermediate contracts.
 
 ## Documentation
-
-https://book.getfoundry.sh/
 
 ## Usage
 
